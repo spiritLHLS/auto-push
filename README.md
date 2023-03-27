@@ -32,3 +32,16 @@ cat ~/.ssh/id_rsa.pub
 ```
 bash push.sh
 ```
+
+首次推送需要手动运行一次
+
+```
+root@localhost:~# bash push.sh
+Initialized empty Git repository in /root/temp/.git/
+Switched to a new branch 'main'
+The authenticity of host 'github.com (140.82.121.4)' can't be established.
+ECDSA key fingerprint is SHA256:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+```
+
+输入yes以确认host，后续就能定时运行了
