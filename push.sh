@@ -4,7 +4,7 @@
 repo_url="git@github.com:spiritLHLS/auto-push.git" #改成你的SSH远程地址
 commit_message="Auto update" # 提交时相应的说明
 branch="main" # 远程分支
-remote_folder="" # 为空则是根目录
+remote_folder="" # 远程仓库的目录，为空则是根目录
 local_repo_dir="temp" # 缓存文件夹，跑完后自动删除无需修改
 
 # 创建本地Git仓库
