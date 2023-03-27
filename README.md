@@ -1,6 +1,13 @@
 # auto-push
 自动上传内容的脚本仓库
 
+初次使用git请先安装最新版本的git，然后
+
+```
+git config --global user.name Github账户名称
+git config --global user.email Github账户邮箱
+```
+
 配置SSH密钥
 
 ```
