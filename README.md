@@ -15,7 +15,13 @@ git config --global user.email Github账户邮箱
 ssh-keygen -t rsa -b 4096 -C "github的邮箱"
 ```
 
-按照提示，一路回车即可生成SSH密钥对。
+按照提示，一路回车即可生成SSH密钥对
+
+查询公钥
+
+```
+cat ~/.ssh/id_rsa.pub
+```
 
 接下来，需要将公钥添加到GitHub账号中。
 
