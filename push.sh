@@ -18,6 +18,9 @@ git checkout -b $branch
 # 设置远程仓库
 git remote add origin $repo_url
 
+# 增大传送限制
+git config http.postBuffer 41943040000
+
 # 拉取远程仓库更改并合并到本地仓库
 git pull origin $branch --rebase
 
