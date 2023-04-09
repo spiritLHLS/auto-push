@@ -45,3 +45,9 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 ```
 
 输入yes以确认host，后续就能定时运行了
+
+有时候推送报错，得按照下面的方式修改Git缓冲区大小为1G，这样才能推送上去，如果文件更大自行修改大小
+
+```
+git config --global http.postBuffer 1048576
+```
