@@ -46,19 +46,23 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 
 输入yes以确认host，后续就能定时运行了
 
+#### 修复
+
 有时候推送报错，得按照下面的方式修改Git缓冲区大小为1G，这样才能推送上去，如果文件更大自行修改大小
 
 ```
 git config --global http.postBuffer 1048576
 ```
 
-可以使用Linux中的cron来定时运行脚本文件。
+#### 定时
+
+可以使用Linux中的cron来定时运行脚本文件
 
 Cron是Linux中的一个基于时间的作业调度程序，可以在指定的时间运行指定的命令或脚本。
 
 要设置每天定时运行/root/push.sh文件，请按照以下步骤操作：
 
-1.打开终端，输入以下命令打开cron定时任务编辑器：
+打开终端，输入以下命令打开cron定时任务编辑器：
 
 ```
 crontab -e
