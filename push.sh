@@ -1,4 +1,5 @@
 #!/bin/bash
+#from https://github.com/spiritLHLS/auto-push
 
 utf8_locale=$(locale -a 2>/dev/null | grep -i -m 1 -E "UTF-8|utf8")
 if [[ -z "$utf8_locale" ]]; then
