@@ -1,6 +1,6 @@
 # auto-push
 
-通过Git自动上传内容到远程仓库
+### 通过Git自动上传本地内容到远程仓库
 
 初次使用git请先安装最新版本的git，然后
 
@@ -46,7 +46,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 
 输入yes以确认host，后续就能定时运行了
 
-#### 修复
+##### 修复
 
 有时候推送报错，得按照下面的方式修改Git缓冲区大小为1G，这样才能推送上去，如果文件更大自行修改大小
 
@@ -54,7 +54,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 git config --global http.postBuffer 1048576
 ```
 
-#### 定时
+##### 定时
 
 可以使用Linux中的cron来定时运行脚本文件
 
@@ -90,3 +90,11 @@ crontab -e
 这样就完成了定时运行脚本的设置。
 
 Cron会在每天的0点0分自动运行/root/push.sh文件。
+
+### 通过Git自动修改该GitHub账号下的所有项目文件的某一行
+
+检测所有公开仓库，匹配到以某字符串开头的行，覆写该行
+
+支持修改是原创的项目还是含Fork的项目
+
+修改autochange.sh再执行即可，其他要求同push.sh一致
