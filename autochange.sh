@@ -2,7 +2,7 @@
 #from https://github.com/spiritLHLS/auto-push
 
 # 指定作者的GitHub用户名
-author="spiritlhl"
+author="spiritlhls"
 
 # 声明存储文件链接的数组
 file_urls=()
@@ -15,7 +15,7 @@ blob_urls=()
 repos=$(curl -s "https://api.github.com/users/$author/repos?per_page=100" | jq -r '.[] | select(.fork == false) | .ssh_url')
 
 # 识别的行开头
-head="xxxx"
+head='xxx'
 
 # 需要替换的行内容
 text='xxxx'
