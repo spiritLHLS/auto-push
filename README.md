@@ -27,6 +27,12 @@ cat ~/.ssh/id_rsa.pub
 
 登录GitHub账号，点击头像，选择“Settings”->“SSH and GPG keys”->“New SSH key”，将刚刚生成的公钥粘贴到“Key”文本框中，点击“Add SSH key”按钮即可。
 
+下载脚本
+
+```
+curl -L https://raw.githubusercontent.com/spiritLHLS/auto-push/main/push.sh -o push.sh && chmod +x push.sh
+```
+
 然后修改本仓库shell脚本，将其设置为定时任务即可(注意执行路径)
 
 ```
