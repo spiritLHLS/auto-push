@@ -38,6 +38,7 @@ git pull origin $branch --rebase
 # 将需要上传的文件复制到仓库的目录下
 cp 你的文件的绝对路径 ./$remote_folder
 # cp -r 你的文件夹的绝对路径 ./$remote_folder
+# 或者下面这个直接在对应文件夹内建立push.sh文件，自行替换/root/test/为你要传的文件夹
 # rsync -av --exclude='push.sh' /root/test/ ./$remote_folder
 
 # 添加所有文件到暂存区
