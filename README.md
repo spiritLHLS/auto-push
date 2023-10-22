@@ -104,3 +104,9 @@ Cron会在每天的0点0分自动运行/root/push.sh文件。
 支持修改是原创的项目还是含Fork的项目
 
 修改autochange.sh再执行即可，其他要求同push.sh一致
+
+效果图：
+
+![图片](https://github.com/spiritLHLS/auto-push/assets/103393591/4a63832c-5dc6-41ae-8993-3b9e8e4f4773)
+
+这样就能更新本作者名下所有的仓库含有同样开头的行为对应的东西
