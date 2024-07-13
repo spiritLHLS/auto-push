@@ -60,6 +60,8 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 git config --global http.postBuffer 1048576
 ```
 
+如果脚本选择使用了```rsync```进行配置，那么务必事先进行```rsync```的安装，大部分Linux系统默认不安装这个组件的，所以得自行安装。
+
 ##### 定时
 
 可以使用Linux中的cron来定时运行脚本文件
