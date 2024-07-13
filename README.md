@@ -33,7 +33,7 @@ cat ~/.ssh/id_rsa.pub
 curl -L https://raw.githubusercontent.com/spiritLHLS/auto-push/main/push.sh -o push.sh && chmod +x push.sh
 ```
 
-然后修改本仓库shell脚本，将其设置为定时任务即可(注意执行路径)
+然后修改本仓库shell脚本(见脚本的注释，需要选择同步方式)
 
 ```
 bash push.sh
@@ -50,7 +50,7 @@ ECDSA key fingerprint is SHA256:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 ```
 
-输入yes以确认host，后续就能定时运行了
+输入yes以确认host，后续就能将其设置为定时任务(注意执行路径)定时运行了
 
 ##### 修复
 
