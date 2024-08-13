@@ -2,6 +2,17 @@
 
 ### 通过Git自动上传本地内容到远程仓库
 
+需要先允许密钥认证，执行以下命令
+
+```
+# 备份原始配置文件
+cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak
+# 修改SSH配置
+sed -i 's/^#\?PubkeyAuthentication.*/PubkeyAuthentication yes/' /etc/ssh/sshd_config
+# 重启SSH服务
+systemctl restart sshd
+```
+
 初次使用git请先安装最新版本的git，然后
 
 ```
